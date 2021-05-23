@@ -1,0 +1,12 @@
+C:\Users\Anas\ccr\rusted-experiments\random-stuff\target\wasm32-unknown-unknown\release\deps\rand_core-a22d2a1fe3628431.rmeta: C:\Users\Anas\.cargo\registry\src\github.com-1ecc6299db9ec823\rand_core-0.6.2\src\lib.rs C:\Users\Anas\.cargo\registry\src\github.com-1ecc6299db9ec823\rand_core-0.6.2\src\block.rs C:\Users\Anas\.cargo\registry\src\github.com-1ecc6299db9ec823\rand_core-0.6.2\src\error.rs C:\Users\Anas\.cargo\registry\src\github.com-1ecc6299db9ec823\rand_core-0.6.2\src\impls.rs C:\Users\Anas\.cargo\registry\src\github.com-1ecc6299db9ec823\rand_core-0.6.2\src\le.rs C:\Users\Anas\.cargo\registry\src\github.com-1ecc6299db9ec823\rand_core-0.6.2\src\os.rs
+
+C:\Users\Anas\ccr\rusted-experiments\random-stuff\target\wasm32-unknown-unknown\release\deps\librand_core-a22d2a1fe3628431.rlib: C:\Users\Anas\.cargo\registry\src\github.com-1ecc6299db9ec823\rand_core-0.6.2\src\lib.rs C:\Users\Anas\.cargo\registry\src\github.com-1ecc6299db9ec823\rand_core-0.6.2\src\block.rs C:\Users\Anas\.cargo\registry\src\github.com-1ecc6299db9ec823\rand_core-0.6.2\src\error.rs C:\Users\Anas\.cargo\registry\src\github.com-1ecc6299db9ec823\rand_core-0.6.2\src\impls.rs C:\Users\Anas\.cargo\registry\src\github.com-1ecc6299db9ec823\rand_core-0.6.2\src\le.rs C:\Users\Anas\.cargo\registry\src\github.com-1ecc6299db9ec823\rand_core-0.6.2\src\os.rs
+
+C:\Users\Anas\ccr\rusted-experiments\random-stuff\target\wasm32-unknown-unknown\release\deps\rand_core-a22d2a1fe3628431.d: C:\Users\Anas\.cargo\registry\src\github.com-1ecc6299db9ec823\rand_core-0.6.2\src\lib.rs C:\Users\Anas\.cargo\registry\src\github.com-1ecc6299db9ec823\rand_core-0.6.2\src\block.rs C:\Users\Anas\.cargo\registry\src\github.com-1ecc6299db9ec823\rand_core-0.6.2\src\error.rs C:\Users\Anas\.cargo\registry\src\github.com-1ecc6299db9ec823\rand_core-0.6.2\src\impls.rs C:\Users\Anas\.cargo\registry\src\github.com-1ecc6299db9ec823\rand_core-0.6.2\src\le.rs C:\Users\Anas\.cargo\registry\src\github.com-1ecc6299db9ec823\rand_core-0.6.2\src\os.rs
+
+C:\Users\Anas\.cargo\registry\src\github.com-1ecc6299db9ec823\rand_core-0.6.2\src\lib.rs:
+C:\Users\Anas\.cargo\registry\src\github.com-1ecc6299db9ec823\rand_core-0.6.2\src\block.rs:
+C:\Users\Anas\.cargo\registry\src\github.com-1ecc6299db9ec823\rand_core-0.6.2\src\error.rs:
+C:\Users\Anas\.cargo\registry\src\github.com-1ecc6299db9ec823\rand_core-0.6.2\src\impls.rs:
+C:\Users\Anas\.cargo\registry\src\github.com-1ecc6299db9ec823\rand_core-0.6.2\src\le.rs:
+C:\Users\Anas\.cargo\registry\src\github.com-1ecc6299db9ec823\rand_core-0.6.2\src\os.rs:
