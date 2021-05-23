@@ -1,0 +1,14 @@
+[package]
+name = "random-stuff"
+version = "0.1.0"
+authors = ["Anas Ahmed <i@1a8e.com>"]
+description = "A starter project with wasm-pack"
+license = "MIT/Apache-2.0"
+repository = "https://github.com/1a8e/rusted-experiments"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2"

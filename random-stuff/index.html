@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>random_stuff wasm</title>
+  </head>
+  <body>
+    <script type="module">
+      import init, {greet} from "./pkg/random_stuff.js";
+      init()
+        .then(() => {
+          greet("WebAssembly")
+        });
+      </script>
+  </body>
+</html>
