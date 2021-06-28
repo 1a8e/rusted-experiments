@@ -1,21 +1,8 @@
 use std::io;
+use ordinal::Ordinal;
 
-fn main() {
-    let mut verse_number = String::new();
-
-    io::stdin()
-        .read_line(&mut verse_number)
-        .expect("Unable to read verse number");
-
-    let verse_number: usize = verse_number
-        .trim()
-        .parse()
-        .expect("Verse number not an integer");
-
-    let verse_number = verse_number + 1;
-
-    let gifts = [
-        "and a partridge in a pear tree",
+const GIFTS: [&str; 12] = [
+        "a partridge in a pear tree",
         "two turtle doves",
         "three French hens",
         "four calling birds",
@@ -29,17 +16,40 @@ fn main() {
         "twelve drummers drumming",
     ];
 
-    if verse_number > gifts.len() {
-        println!("There are only {} verses :(", gifts.len())
+
+
+fn main() {
+    let mut verse_limit = String::new();
+
+    io::stdin()
+        .read_line(&mut verse_limit)
+        .expect("Unable to read verse number");
+
+    let verse_limit: usize = verse_limit
+        .trim()
+        .parse()
+        .expect("Verse number not an integer");
+
+    if verse_limit > GIFTS.len() {
+        println!("There are only {} verses :(", GIFTS.len())
     } else {
-        for verse in 1..verse_number {
-            generate_verse(verse);
+        let verse_limit = verse_limit + 1;
+        for verse_number in 1..verse_limit {
+            generate_verse(verse_number, GIFTS);
         }
     }
 }
 
-fn generate_verse(verse_number: usize) {
-    let base = "On the first day of Christmas my true love sent to me";
-    println!("{}", base);
-    println!("Verse: {}", verse_number);
+fn generate_verse(verse_number: usize, gifts_var: [&str; 12]) {
+    println!("On the {} day of Christmas my true love sent to me", Ordinal(verse_number).to_string());
+
+    for verse in (1..verse_number).rev() {
+        println!("{}", gifts_var[verse]);
+    }
+
+    if verse_number > 1 {
+        println!("and {}", gifts_var[0]);
+    } else {
+        println!("{}", gifts_var[0]);
+    }
 }
