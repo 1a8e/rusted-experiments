@@ -17,7 +17,7 @@ pub fn greet(name: &str) {
 #[wasm_bindgen]
 pub fn pass_gen() -> String {
     let mut random_strings: Vec<String>;
-    for x in 0..LEN {
+    for x in 0..LENGTH {
         random_strings.append(
             thread_rng()
                 .sample_iter(&Alphanumeric)
