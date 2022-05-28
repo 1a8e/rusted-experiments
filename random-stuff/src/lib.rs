@@ -16,14 +16,14 @@ pub fn greet(name: &str) {
 
 #[wasm_bindgen]
 pub fn pass_gen() -> String {
-    let mut random_strings: Vec<String>;
-    for x in 0..LENGTH {
-        random_strings.append(
+    let mut random_strings: Vec<String> = Vec::new();
+    for _x in 0..LENGTH {
+        random_strings.push(
             thread_rng()
                 .sample_iter(&Alphanumeric)
                 .take(LENGTH)
                 .map(char::from)
-                .collect(),
+                .collect()
         )
     }
     random_strings.join("_")
