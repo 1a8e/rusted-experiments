@@ -2,6 +2,8 @@ use rand::distributions::Alphanumeric;
 use rand::{thread_rng, Rng};
 use wasm_bindgen::prelude::*;
 
+const LENGTH: usize = 5;
+
 #[wasm_bindgen]
 extern "C" {
     pub fn alert(s: &str);
@@ -14,10 +16,15 @@ pub fn greet(name: &str) {
 
 #[wasm_bindgen]
 pub fn pass_gen() -> String {
-    let rand_string: String = thread_rng()
-        .sample_iter(&Alphanumeric)
-        .take(30)
-        .map(char::from)
-        .collect();
-    rand_string
+    let mut random_strings: Vec<String>;
+    for x in 0..LEN {
+        random_strings.append(
+            thread_rng()
+                .sample_iter(&Alphanumeric)
+                .take(LENGTH)
+                .map(char::from)
+                .collect(),
+        )
+    }
+    random_strings.join("_")
 }
